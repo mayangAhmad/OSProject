@@ -434,6 +434,7 @@ root@f65be1987f84:~# nano helloworld.txt
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
 
 6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
+yes
 ```bash 
 @joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
 
@@ -458,8 +459,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** no because filesystem is wiped when the container is removed
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** yes
 
 ## Running your own container with persistent storage
 
@@ -478,14 +479,21 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
-2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
+```bash
+-rw-rw-rw- 1 root root 0 Jun 28 16:11 helloworld.txt
+The files created in the Docker container (helloworld.txt) on the host virtual machine (/workspaces/OSProject/myroot) are owned by the root user and belong to the root group.
+```
+
+2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. yes
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+@hannangrzm ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 0
+-rw-rw-rw- 1 codespace codespace 0 Jun 28 16:11 helloworld.txt
 
 ## You are on your own, create your own static webpage
 
@@ -511,9 +519,10 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** Permissions of /usr/local/apache2/htdocs: drwxr-xr-x
+Owner and group of /usr/local/apache2/htdocs: User ID 1000, Group ID 1000
+2. What port is the apache web server running. ***(1 mark)*** 8080
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 80
 
 ## Create SUB Networks
 
