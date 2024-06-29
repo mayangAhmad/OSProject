@@ -521,9 +521,12 @@ The files created in the Docker container (helloworld.txt) on the host virtual m
 sudo chown -R codespace:codespace myroot
 
 ```
+
+```bash
 @hannangrzm ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
 total 0
 -rw-rw-rw- 1 codespace codespace 0 Jun 28 16:11 helloworld.txt
+``` 
 
 ## You are on your own, create your own static webpage
 
@@ -551,10 +554,11 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** Permissions of /usr/local/apache2/htdocs: drwxr-xr-x
-Owner and group of /usr/local/apache2/htdocs: User ID 1000, Group ID 1000
-2. What port is the apache web server running. ***(1 mark)*** 8080
-3. What port is open for http protocol on the host machine? ***(1 mark)*** 80
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+   Permissions of /usr/local/apache2/htdocs: drwxr-xr-x
+   Owner and group of /usr/local/apache2/htdocs: User ID 1000, Group ID 1000
+3. What port is the apache web server running. ***(1 mark)*** 8080
+4. What port is open for http protocol on the host machine? ***(1 mark)*** 80
 
 ## Create SUB Networks
 
