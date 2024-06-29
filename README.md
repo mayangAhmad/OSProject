@@ -445,7 +445,23 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 @joeynor ➜ /workspaces/OSProject (main) $ docker restart romantic_jackson
 ```
 
-7. Stop the container and delete the container. What happened to your helloworld.txt?
+```bash 
+```bash 
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker stop pedantic_wescoff
+pedantic_wescoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND              CREATED        STATUS                        PORTS                                   NAMES
+c9312e4d6e92   httpd     "httpd-foreground"   16 hours ago   Up 4 minutes                  0.0.0.0:8080->80/tcp, :::8080->80/tcp   quizzical_heisenberg
+90ca764d0917   debian    "bash"               16 hours ago   Exited (255) 10 minutes ago                                           pedantic_wescoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker restart pedantic_wescoff
+pedantic_wescoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker ps -a 
+CONTAINER ID   IMAGE     COMMAND              CREATED        STATUS         PORTS                                   NAMES
+c9312e4d6e92   httpd     "httpd-foreground"   16 hours ago   Up 5 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   quizzical_heisenberg
+90ca764d0917   debian    "bash"               16 hours ago   Up 4 seconds                                           pedantic_wescoff
+```
+```
+7. Stop the container and delete the container. What happened to your helloworld.txt?  dissapeared
 
 ```bash 
 @joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
@@ -455,6 +471,20 @@ CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                      
 f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago             romantic_jackson
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
+```
+```bash 
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker stop pedantic_wescoff
+pedantic_wescoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker rm pedantic wesscoff
+Error response from daemon: No such container: pedantic
+Error response from daemon: No such container: wesscoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker rm pedantic_wesscoff
+Error response from daemon: No such container: pedantic_wesscoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker rm pedantic_wescoff
+pedantic_wescoff
+@hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker ps -a 
+CONTAINER ID   IMAGE     COMMAND              CREATED        STATUS         PORTS                                   NAMES
+c9312e4d6e92   httpd     "httpd-foreground"   16 hours ago   Up 8 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   quizzical_heisenberg
 ```
 
 ***Questions:***
@@ -516,6 +546,8 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 6. You can then access your website by adding an index.html towards the end of your url link, like the one below. 
 
  <img src="./images/helloworldweb.png" width="70%">
+
+![alt text](image.png)
 
 ***Questions:***
 
