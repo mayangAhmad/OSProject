@@ -446,7 +446,6 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ```
 
 ```bash 
-```bash 
 @hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker stop pedantic_wescoff
 pedantic_wescoff
 @hannangrzm ➜ /workspaces/OSProject/myroot/webpage (main) $ docker ps -a
@@ -460,7 +459,7 @@ CONTAINER ID   IMAGE     COMMAND              CREATED        STATUS         PORT
 c9312e4d6e92   httpd     "httpd-foreground"   16 hours ago   Up 5 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   quizzical_heisenberg
 90ca764d0917   debian    "bash"               16 hours ago   Up 4 seconds                                           pedantic_wescoff
 ```
-```
+
 7. Stop the container and delete the container. What happened to your helloworld.txt?  dissapeared
 
 ```bash 
