@@ -903,6 +903,8 @@ a. Connect the Node.js container to the MySQL network:
 docker network connect mysqlnet nodejs-container
 ```
 This command connects the nodejs-container to the mysqlnet network, allowing it to communicate with the mysql-container.
+
+
 b. Restart the Node.js container:
 ```
 docker restart nodejs-container
