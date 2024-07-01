@@ -7,7 +7,7 @@ Section: 2
 Team Mates:
 1. Mayang Fauni binti Ahmad Suryadi  2216462
 2. Nurhannan Gairuzazmi 2210472
-3. __Fill name__ and __matric no__
+3. Siti Nur Raihannah Binti Mohd NAzrul 2219358
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
