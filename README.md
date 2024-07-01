@@ -738,15 +738,14 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=116 ttl=64 time=0.111 ms
 64 bytes from 172.20.0.3: seq=117 ttl=64 time=0.068 ms
 64 bytes from 172.20.0.3: seq=118 ttl=64 time=0.079 ms
- ```
-
+  ```
+ ***(1 mark)*** __Fill answer here__.
+ 
+5. What is different from the previous ping in the section above? ***(1 mark)***
 Successfully ping c1 and c2. 
 Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
 Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
- 
- 
- ***(1 mark)*** __Fill answer here__.
-5. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+ __Fill answer here__.
 
 ## Intermediate Level (10 marks bonus)
 
