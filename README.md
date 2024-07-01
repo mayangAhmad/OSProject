@@ -614,8 +614,139 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output .
+
+ ```
+ @raihannahnazrul ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.134 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.062 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.097 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=11 ttl=64 time=0.064 ms
+64 bytes from 172.20.0.3: seq=12 ttl=64 time=0.103 ms
+64 bytes from 172.20.0.3: seq=13 ttl=64 time=0.067 ms
+64 bytes from 172.20.0.3: seq=14 ttl=64 time=0.089 ms
+64 bytes from 172.20.0.3: seq=15 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=16 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=17 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=18 ttl=64 time=0.059 ms
+64 bytes from 172.20.0.3: seq=19 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=20 ttl=64 time=0.093 ms
+64 bytes from 172.20.0.3: seq=21 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=22 ttl=64 time=0.102 ms
+64 bytes from 172.20.0.3: seq=23 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=24 ttl=64 time=0.108 ms
+64 bytes from 172.20.0.3: seq=25 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=26 ttl=64 time=0.106 ms
+64 bytes from 172.20.0.3: seq=27 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=28 ttl=64 time=0.130 ms
+64 bytes from 172.20.0.3: seq=29 ttl=64 time=0.070 ms
+64 bytes from 172.20.0.3: seq=30 ttl=64 time=0.126 ms
+64 bytes from 172.20.0.3: seq=31 ttl=64 time=0.082 ms
+64 bytes from 172.20.0.3: seq=32 ttl=64 time=0.104 ms
+64 bytes from 172.20.0.3: seq=33 ttl=64 time=0.073 ms
+64 bytes from 172.20.0.3: seq=34 ttl=64 time=0.094 ms
+64 bytes from 172.20.0.3: seq=35 ttl=64 time=0.074 ms
+64 bytes from 172.20.0.3: seq=36 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=37 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=38 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=39 ttl=64 time=0.090 ms
+64 bytes from 172.20.0.3: seq=40 ttl=64 time=0.093 ms
+64 bytes from 172.20.0.3: seq=41 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=42 ttl=64 time=0.096 ms
+64 bytes from 172.20.0.3: seq=43 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=44 ttl=64 time=0.095 ms
+64 bytes from 172.20.0.3: seq=45 ttl=64 time=0.070 ms
+64 bytes from 172.20.0.3: seq=46 ttl=64 time=0.099 ms
+64 bytes from 172.20.0.3: seq=47 ttl=64 time=0.082 ms
+64 bytes from 172.20.0.3: seq=48 ttl=64 time=0.092 ms
+64 bytes from 172.20.0.3: seq=49 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=50 ttl=64 time=0.107 ms
+64 bytes from 172.20.0.3: seq=51 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=52 ttl=64 time=0.106 ms
+64 bytes from 172.20.0.3: seq=53 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=54 ttl=64 time=0.091 ms
+64 bytes from 172.20.0.3: seq=55 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=56 ttl=64 time=0.102 ms
+64 bytes from 172.20.0.3: seq=57 ttl=64 time=0.082 ms
+64 bytes from 172.20.0.3: seq=58 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=59 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=60 ttl=64 time=0.105 ms
+64 bytes from 172.20.0.3: seq=61 ttl=64 time=0.117 ms
+64 bytes from 172.20.0.3: seq=62 ttl=64 time=0.088 ms
+64 bytes from 172.20.0.3: seq=63 ttl=64 time=0.072 ms
+64 bytes from 172.20.0.3: seq=64 ttl=64 time=0.104 ms
+64 bytes from 172.20.0.3: seq=65 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=66 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=67 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=68 ttl=64 time=0.093 ms
+64 bytes from 172.20.0.3: seq=69 ttl=64 time=0.089 ms
+64 bytes from 172.20.0.3: seq=70 ttl=64 time=0.094 ms
+64 bytes from 172.20.0.3: seq=71 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=72 ttl=64 time=0.102 ms
+64 bytes from 172.20.0.3: seq=73 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=74 ttl=64 time=0.103 ms
+64 bytes from 172.20.0.3: seq=75 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=76 ttl=64 time=0.109 ms
+64 bytes from 172.20.0.3: seq=77 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=78 ttl=64 time=0.091 ms
+64 bytes from 172.20.0.3: seq=79 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=80 ttl=64 time=0.069 ms
+64 bytes from 172.20.0.3: seq=81 ttl=64 time=0.076 ms
+64 bytes from 172.20.0.3: seq=82 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=83 ttl=64 time=0.066 ms
+64 bytes from 172.20.0.3: seq=84 ttl=64 time=0.106 ms
+64 bytes from 172.20.0.3: seq=85 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=86 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=87 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=88 ttl=64 time=0.070 ms
+64 bytes from 172.20.0.3: seq=89 ttl=64 time=0.102 ms
+64 bytes from 172.20.0.3: seq=90 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=91 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=92 ttl=64 time=0.111 ms
+64 bytes from 172.20.0.3: seq=93 ttl=64 time=0.117 ms
+64 bytes from 172.20.0.3: seq=94 ttl=64 time=0.111 ms
+64 bytes from 172.20.0.3: seq=95 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=96 ttl=64 time=0.114 ms
+64 bytes from 172.20.0.3: seq=97 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=98 ttl=64 time=0.083 ms
+64 bytes from 172.20.0.3: seq=99 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=100 ttl=64 time=0.105 ms
+64 bytes from 172.20.0.3: seq=101 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=102 ttl=64 time=0.100 ms
+64 bytes from 172.20.0.3: seq=103 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=104 ttl=64 time=0.090 ms
+64 bytes from 172.20.0.3: seq=105 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=106 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=107 ttl=64 time=0.090 ms
+64 bytes from 172.20.0.3: seq=108 ttl=64 time=0.066 ms
+64 bytes from 172.20.0.3: seq=109 ttl=64 time=0.083 ms
+64 bytes from 172.20.0.3: seq=110 ttl=64 time=0.121 ms
+64 bytes from 172.20.0.3: seq=111 ttl=64 time=0.083 ms
+64 bytes from 172.20.0.3: seq=112 ttl=64 time=0.101 ms
+64 bytes from 172.20.0.3: seq=113 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=114 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=115 ttl=64 time=0.073 ms
+64 bytes from 172.20.0.3: seq=116 ttl=64 time=0.111 ms
+64 bytes from 172.20.0.3: seq=117 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=118 ttl=64 time=0.079 ms
+ ```
+
+Successfully ping c1 and c2. 
+Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
+Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
+ 
+ 
+ ***(1 mark)*** __Fill answer here__.
+5. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
 
 ## Intermediate Level (10 marks bonus)
 
