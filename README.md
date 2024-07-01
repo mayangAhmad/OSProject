@@ -897,17 +897,17 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
-1. Connect the Node.js container to the MySQL network:
+a. Connect the Node.js container to the MySQL network:
   ``` 
 docker network connect mysqlnet nodejs-container
 ```
 This command connects the nodejs-container to the mysqlnet network, allowing it to communicate with the mysql-container.
-2. Restart the Node.js container:
+b. Restart the Node.js container:
 ```
 docker restart nodejs-container
 ```
 Restarting the container ensures that it picks up the new network configuration.
-Now, the Node.js application should be able to connect to the MySQL database, and the curl http://localhost:3000/random command should return a random row from the mytable table in the mydatabase database. If the table is empty or doesn’t exist, you’ll need to populate it with data as described in Step 6 of your instructions.
+Now, the Node.js application should be able to connect to the MySQL database, and the curl http://localhost:3000/random command should return a random row from the mytable table in the mydatabase database. If the table is empty or doesn’t exist,  populate it with data as described in Step 6 of the instructions.
 
 ## What to submit
 
