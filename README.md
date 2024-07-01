@@ -1,6 +1,6 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: __Fedora__. 
 
 Section: 2
 
@@ -71,10 +71,7 @@ vCPU: Options include 1 vCPU, 2 vCPUs
 
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```bash
-Version control: Track changes, compare versions, and revert.
-Collaboration: Share work with team members.
-Backup: Protect against data loss.
-Deployment: Enable continuous integration and deployment.
+To make sure we can track changes and ensure no data loss after making changes.
 ```
 
 ## Exploring the Terminal
@@ -380,10 +377,9 @@ linux version: 23~22.04.1-Ubuntu
 ```
 
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-```bash
 ls command lists files and directories within the current working directory. By default, it displays a simple list of file names in alphabetical order.
 ls -asl command provides a long listing format. It includes additional details such as file permissions, owner, group, size, and modification date.
-```
+
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
 ```bash
