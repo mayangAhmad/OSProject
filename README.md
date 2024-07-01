@@ -587,7 +587,7 @@ acd86aee4060   none      null      local
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.?
 ***(1 mark)*** __Fill answer here__. 
 ```
-luenet : 172.18.0.1
+bluenet : 172.18.0.1
 rednet : 172.19.0.1
 
 ```
@@ -742,7 +742,7 @@ PING c2 (172.20.0.3): 56 data bytes
   ```
 
  
-5. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
 Successfully ping c1 and c2. 
 Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
 Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
