@@ -575,7 +575,7 @@ docker run -itd --net rednet --name c2 busybox sh
 1. Describe what is busybox and what is command switch **--name** is for? . BusyBox is a software suite that provides several Unix utilities in a single executable file. It is often used in embedded systems and Docker containers because it offers a lightweight set of tools that are efficient and functional. --name switch: The --name switch in Docker is used to assign a name to a container. This makes it easier to reference the container by name rather than by its container ID, simplifying management and identification of the container***(2 mark)*** __Fill answer here__.
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.?
-***(1 mark)*** __Fill answer here__.
+***(1 mark)*** __Fill answer here__. <img src="./images/Screenshot 2024-07-01 211328.png>" width="70%">
 5. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
 6. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
 
