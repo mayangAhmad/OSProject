@@ -585,24 +585,25 @@ acd86aee4060   none      null      local
 
 ```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.?
-
+***(1 mark)*** __Fill answer here__. 
 ```
 luenet : 172.18.0.1
 rednet : 172.19.0.1
 
 ```
-***(1 mark)*** __Fill answer here__. 
-4. What is the network address for the running container c1 and c2? 
+
+4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
 ```
 IP address c1: 172.18.0.2
 IP address c2: 172.19.0.2
 ```
-***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . 
+
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** 
+ 
 ```
 No , Since c1 and c2 are on different networks (bluenet and rednet respectively), they cannot communicate directly with each other. Therefore, the ping command fails with a "bad address" error.
 ```
-***(1 mark)*** __Fill answer here__.
+
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -614,7 +615,7 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output .
+1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__. 
 
  ```
  @raihannahnazrul ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
@@ -739,13 +740,13 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=117 ttl=64 time=0.068 ms
 64 bytes from 172.20.0.3: seq=118 ttl=64 time=0.079 ms
   ```
- ***(1 mark)*** __Fill answer here__.
+
  
-5. What is different from the previous ping in the section above? ***(1 mark)***
+5. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
 Successfully ping c1 and c2. 
 Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
 Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
- __Fill answer here__.
+
 
 ## Intermediate Level (10 marks bonus)
 
